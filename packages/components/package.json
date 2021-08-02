@@ -1,0 +1,21 @@
+{
+  "name": "@nighttrax/components",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "~17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "~17.0.0",
+    "react": "~17.0.0",
+    "react-dom": "~17.0.0"
+  }
+}

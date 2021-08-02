@@ -1,0 +1,33 @@
+node_modules
+.next
+
+/**/*.log
+/**/*.psd
+/**/*.icloud
+
+.idea/*
+/.idea/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+/storybook-static/
+.env*.local
+
+# misc
+.DS_Store
+#.env*
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.vs
+
+
+package-lock.json
+
+report.*.json
