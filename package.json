@@ -2,10 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "dev": "lerna run dev  --stream",
-    "build": "lerna run --parallel build --stream",
-    "app:build": "lerna run --scope={frontend} build --stream --include-dependencies",
-    "publish": "lerna run --scope frontend export --stream",
+    "dev": "lerna run dev --stream",
+    "build": "lerna run --scope @wk/frontend build --stream --include-dependencies",
+    "publish": "lerna run --scope @wk/frontend export --stream",
     "new-version": "lerna version --conventional-commit --yes",
     "deploy:production": "now && now alias",
     "lerna-fix": "npx lerna clean -y && npx lerna bootstrap --hoist"
